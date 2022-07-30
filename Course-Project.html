@@ -643,7 +643,7 @@ Let’s see the results.</p>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
 <p>Although the Random Forest model using 27 predictors has higher
-in-sample accuracy than the GBM model, they agree on all 20 test case
+accuracy than the GBM model, they agree on all 20 test case
 predictions. This leads me to believe that they will perform equally
 well when given new data. The models improved with every new set of
 data, so I expect that the predictions on the test data will be 99%
@@ -680,7 +680,7 @@ set.seed(1631)
 fitrf &lt;- train(classe~.,data=training,method=&quot;rf&quot;,ntrees=200,trControl=trainControl(method=&quot;cv&quot;,number=10))
 ## RF RESULTS
 fitrf$results
-## IMPORTANT VARIABLE PLOT
+## IMPORTANT VARIABLES
 varImpPlot(fitrf$finalModel)
 ## CHOOSE ONLY TOP 27 VARIABLES
 vimp &lt;- varImp(fitrf$finalModel)

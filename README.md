@@ -1,2 +1,2 @@
 # Machine-Learning-Course-Project
-Coursera Practical Machine Learning Course Project 
+Predicitng Proper Barbell-Lift Form using HAR Data
